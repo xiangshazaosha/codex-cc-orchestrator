@@ -1,5 +1,7 @@
 # 点将台
 
+**非商业源码公开（不是标准开源）**：当前采用「笑爷非商业同许可源码公开许可 2.0」。未经另行书面授权不得商用；对外分发或供他人联网使用原版/改版，须公开匹配版本的对应源码并保留同许可。客户代码、密钥、会话和独立成果不因此要求公开。见 [LICENSE](LICENSE)、[NOTICE](NOTICE)、[场景说明](docs/licensing.md)及[历史过渡](docs/LICENSE-HISTORY.md)。
+
 ### 可迁移的 Agent 分层协作编排器
 
 让擅长决策的 Agent 做主脑，让适合执行的 Agent 完成实质工作，再由独立会话审查、
@@ -27,7 +29,7 @@
 
 ## 功能与用途
 
-**当前版本 v0.4.0**：[方案与边界](docs/V0.4.md)。新增逐次用量记录（不含价格）、
+**当前版本 0.4.1（许可修订，功能同 v0.4.0）**：[方案与边界](docs/V0.4.md)。逐次用量记录（不含价格）、
 确定性结果压缩和 `execute_task(background=true)` 后台提交；核心分工不变。
 
 - **能力分工**：高判断任务留给主脑，明确且可验证的工作包交给执行 Agent。
@@ -96,9 +98,9 @@ Server 在启动执行或审查前分配 UUID，只有执行端回报相同 sess
 [INSTALL.md](INSTALL.md)。
 
 ```bash
-git clone https://github.com/zjgxkj/codex-cc-orchestrator.git
+git clone https://github.com/xiangshazaosha/codex-cc-orchestrator.git
 cd codex-cc-orchestrator
-git checkout v0.4.0
+# 默认 master 当前包含 0.4.1 许可修订；旧 v0.4.0 保留原 1.0 许可
 uv sync
 ```
 
@@ -258,7 +260,7 @@ Tool Result，也可以使用；客户端必须为新 Job 提供可信 `project_
 task、review 和 resume。更换主脑或执行端时见
 [AGENT_PORTING.md](AGENT_PORTING.md)。
 
-## 版本：v0.4.0
+## 版本：0.4.1（许可修订，功能同 v0.4.0）
 
 功能边界、统计口径、数据库迁移及验证方法见 [v0.4 定稿](docs/V0.4.md)。
 后台任务不会跨 MCP 进程重启继续运行；重启后按确认过的 session 恢复，不能把 RUNNING
@@ -266,13 +268,19 @@ task、review 和 resume。更换主脑或执行端时见
 
 ## License
 
-Licensed under the [Non-Commercial Reciprocal Source License 1.0](LICENSE):
-non-commercial use only, attribution required, and distributed, derived, or
-network-served Covered Works must publish their Corresponding Source under the
+Licensed under the [Xiaoye Noncommercial Reciprocal Source License 2.0](LICENSE):
+non-commercial use only, attribution required, and distributed or
+network-served Covered Works (including derivatives) must publish their Corresponding Source under the
 same license. Commercial use requires separate prior written permission.
 
 Because commercial use is prohibited, this is a **source-available** license,
 not an OSI-approved open-source license.
+
+The full bilingual terms, component boundaries, prior-version grants and source/data
+separation are documented in [licensing.md](docs/licensing.md) and [license history](docs/LICENSE-HISTORY.md).
+An independent output is not automatically a derivative, but commercial use of the
+covered orchestration tool itself still needs permission. This custom license has
+not been reviewed by counsel and does not guarantee enforcement or compensation.
 
 ## Official references
 

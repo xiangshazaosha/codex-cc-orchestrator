@@ -7,6 +7,17 @@ description: Route non-trivial repository features, debugging, refactors, tests,
 
 CC means the Claude Code harness. Optimize useful offload and Codex context, not call count.
 
+## License boundary
+
+This skill's covered first-party material is noncommercial source-available under
+the bundled [LICENSE](LICENSE), version 2.0; retain [NOTICE](NOTICE). Commercial
+tool/skill use needs separate written authority unless the user is the relevant
+rightsholder. When distributing covered copies/adaptations or exposing them for
+network use, publish matching Corresponding Source under the same terms. Do not
+publish client repositories, secrets, sessions or independently generated output
+merely because this tool handled them. Third-party and valid older grants remain
+independent; do not claim this is OSI-approved open source.
+
 ## Route once, early
 
 - Keep only discussion/planning, tiny understood mechanical edits, and work CC cannot access local.

@@ -1,5 +1,7 @@
 # 点将台安装说明（Codex × Claude Code）
 
+**许可先读**：本项目自有受保护部分采用非商业同许可源码公开许可 2.0。商业任务需先取得相应书面授权；对外分发/联网提供须公开涵盖部分的对应源码，但不要公开客户资料、密钥或运行数据库。完整条件见 [LICENSE](LICENSE)，边界见 [许可说明](docs/licensing.md)。安装或支付模型费用不自动取得商业授权。
+
 > 目标：把本项目作为 STDIO MCP Server 接入 Codex，让 Codex 把已拆好的任务委派给 Claude Code 执行与验收。
 >
 > 适用：Windows + Codex CLI（已在 codex-cli 0.144.6 验证）。POSIX 步骤一致，仅路径分隔符不同。
@@ -33,7 +35,7 @@
 
 ```bash
 # 如果你还没拿到代码
-git clone https://github.com/zjgxkj/codex-cc-orchestrator.git
+git clone https://github.com/xiangshazaosha/codex-cc-orchestrator.git
 cd codex-cc-orchestrator
 
 # 创建虚拟环境并安装依赖（mcp + claude-agent-sdk）

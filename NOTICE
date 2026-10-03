@@ -1,0 +1,26 @@
+点将台 — 适用范围与归属说明
+
+当前自有受保护部分采用笑爷非商业同许可源码公开许可 2.0，完整条件见 LICENSE。
+公开维护者：笑爷 / xiangshazaosha，GitHub ID 267697669（原账号名 zjgxkj）。
+原项目：https://github.com/xiangshazaosha/codex-cc-orchestrator
+Copyright (c) 2026 相应作者及权利人；各自保留权利，不转让版权。
+
+覆盖：依法有权许可的本项目 src 代码、编排 Skill、模板、文档及其改编中的受保护表达。
+不覆盖：被处理的独立客户仓库/成果、密钥、运行日志/会话/SQLite 数据、思想和独立作品，
+以及独立第三方依赖。通过工具生成独立代码不自动让该代码成为本项目的衍生作品。
+
+已知直接运行依赖（实际锁定版本及传递依赖见 uv.lock）：
+- mcp / Model Context Protocol Python SDK：MIT；本次安装核对版本 1.29.0。
+  https://github.com/modelcontextprotocol/python-sdk
+- claude-agent-sdk / Anthropic Python SDK：MIT；本次安装核对版本 0.2.136。
+  https://github.com/anthropics/claude-agent-sdk-python
+保留的直接 SDK 许可正文见 docs/third-party-licenses/，仅为其相应组件的许可，
+不表示点将台本身采用 MIT。传递依赖仍分别遵守其原许可，新增/再分发时另外审查。
+Claude Code CLI、模型/API、Codex 及其他外部产品的访问/服务/二进制权利依其供应方条款；
+本项目许可既不替代那些条款，也不因为 SDK 标为 MIT 就给所有附带产品授予 MIT 权利。
+本仓库不提交 .venv、外部 CLI 二进制或鉴权信息。
+
+旧的 Non-Commercial Reciprocal Source License 1.0 有效授权不被 2.0 追溯撤回，
+旧账号 Copyright 声明保留在历史文本中；见 docs/LICENSE-HISTORY.md。
+分发时保留本 NOTICE、LICENSE、适用第三方条款及修改声明；公开匹配版本的对应源码。
+本清单及 Git 历史检查不是完整权属、传递依赖或法律效力证明。

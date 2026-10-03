@@ -346,7 +346,7 @@ def test_tool_schema_and_ping_metadata(tmp_path):
         assert {"job_id", "cwd"} <= required
 
         ping = _call(proc, 71, "ping", {})["result"]["structuredContent"]
-        assert ping["version"] == "0.4.0"
+        assert ping["version"] == "0.4.1"
         assert ping["sdk_version"]
         assert ping["cli_version"]
         assert ping["max_buffer_size"] == 20 * 1024 * 1024
